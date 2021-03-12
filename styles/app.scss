@@ -1,0 +1,106 @@
+//Site Color
+$primary-dark: rgba(52, 58, 6);
+$primary-white: #ffff;
+$primary-grey: #666666;
+/*NAVBAR*/
+$navbarColor: #709DA5;
+$texteNavColor: rgb(255, 255, 255);
+$lineUpNavColor: #EDA90B;
+/*HEADER*/
+$titleColor: #EDA90B;
+$subTitleColor: white;
+$textDefilColor: white;
+$borderButton: #709DA5;
+$borderButtonHover: #306F7B;
+/*SERVICES*/
+$backgroundColor: #f4f4f4;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/**************************** NAVBAR *******************************/
+
+nav {
+  z-index: 2;
+}
+
+.logo {
+  width: 16.25rem;
+}
+
+/*------- MENU LINKS -------*/
+
+.navbar {
+  background-color: $navbarColor;
+}
+
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: $texteNavColor!important;
+  border-top: 0.1875rem solid $borderButton;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;
+}
+
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid $lineUpNavColor;
+}
+
+.navbar-nav >li > a:hover {
+  border-top: 0.1875rem solid $lineUpNavColor;
+}
