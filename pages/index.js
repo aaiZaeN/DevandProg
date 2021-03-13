@@ -3,6 +3,7 @@ import Particles from 'react-particles-js'
 import AboutMe from '../components/AboutMe'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
+import Services from '../components/Services'
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
       <Navbar/>
       <Header/>
       <AboutMe/>
+      <Services/>
     </div>
   )
 }
